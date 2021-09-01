@@ -7,6 +7,14 @@
     text-decoration: none;
 }
 
+.back-link{
+    font-size: 1.5em;
+    color: white;
+    margin: 1.5em;
+}
+
+/*PÁGINA DE LOGIN*/
+
 .login-body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/_cdn/_img/login-background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -57,9 +65,37 @@ fieldset{
     border-radius: 5px;
     color: white;
     font-size: 30px;
+    
 }
 
 .login-input:hover{
     background: #814b19;
     cursor: pointer;  
+}
+
+/*FIM DA PÁGINA DE LOGIN*/
+
+
+@media (max-width: 1440px){
+    .login-box input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 640px){
+    .login-body h1{
+        font-size: 2.5em;
+    }
+
+    .login-body p{
+        font-size: 1em;
+    }
+
+    .login-box input{
+        width: 250px;
+        height: 45px;
+    }
+    .login-box label{
+        font-size: 1.2em;
+    }
 }
